@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="374.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejercicio5_sb.ej5_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="n1" layoutX="91.0" layoutY="71.0" text="Número 1:">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Label fx:id="n2" layoutX="91.0" layoutY="113.0" text="Número 2:">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+    <Button fx:id="operar" layoutX="173.0" layoutY="203.0" onAction="#oncalcular" prefHeight="50.0" prefWidth="93.0" text="OPERAR">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+   <TextField fx:id="field1" layoutX="229.0" layoutY="72.0" />
+   <TextField fx:id="field2" layoutX="229.0" layoutY="114.0" />
+   <RadioButton fx:id="suma" layoutX="51.0" layoutY="162.0" mnemonicParsing="false" text="SUMA" />
+   <RadioButton fx:id="mult" layoutX="219.0" layoutY="162.0" mnemonicParsing="false" text="MULTIPLICACIÓN" />
+   <RadioButton fx:id="resta" layoutX="134.0" layoutY="162.0" mnemonicParsing="false" text="RESTA" />
+   <RadioButton fx:id="div" layoutX="362.0" layoutY="162.0" mnemonicParsing="false" text="DIVISIÓN" />
+   <Label fx:id="result" layoutX="80.0" layoutY="288.0" text="RESULTADO: ">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="filed_result" layoutX="219.0" layoutY="289.0" />
+</AnchorPane>
